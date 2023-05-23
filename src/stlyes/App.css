@@ -1,0 +1,14 @@
+.footer{
+  text-align: center;
+  color: #aaa;
+  font-weight: 300;
+}
+
+a {
+  color: #1db954;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

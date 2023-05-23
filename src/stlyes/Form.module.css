@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  font-size: 1.5rem;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.form > label {
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.form > input {
+  outline: none;
+  border: none;
+  background-color: #2f2f2f;
+  color: #eee;
+  height: 40px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.form > input:focus {
+  outline: #1ed760 solid 1px;
+}
+
+.form > input::placeholder {
+  color: #888;
+}
+
+.form > button {
+  height: 40px;
+  width: 150px;
+}
