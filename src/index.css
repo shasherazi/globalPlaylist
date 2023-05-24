@@ -1,5 +1,6 @@
-:root{
+:root {
   background: #191414;
   color: #fff;
   font-family: Montserrat, sans-serif;
+  --toastify-font-family: Montserrat, sans-serif;
 }

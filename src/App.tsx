@@ -25,7 +25,7 @@ function App() {
       <p className="footer">
         Or see the playlist on Spotify{" "}
         <a
-          href="https://open.spotify.com/playlist/37i9dQZF1DX5trt9i14X7j"
+          href="https://open.spotify.com/playlist/5guHkOV7FI54QTX9JspOsY"
           target="_blank"
           rel="noreferrer"
         >
