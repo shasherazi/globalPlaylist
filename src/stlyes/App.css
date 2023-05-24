@@ -12,3 +12,13 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coffee {
+  height: 50px;
+}

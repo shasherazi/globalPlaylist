@@ -5,7 +5,16 @@ import "./stlyes/App.css";
 function App() {
   return (
     <>
-      <h1 className="title">Global Spotify playlist</h1>
+      <div className="header">
+        <h1 className="title">Global Spotify playlist</h1>
+        <a href="https://www.buymeacoffee.com/syedhassanaskri" target="_blank">
+          <img
+            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+            className="coffee"
+            alt="Buy Me A Coffee"
+          />
+        </a>
+      </div>
       <p className="description">
         Add your favorite song to the playlist and listen to it with the rest of
         the world! Songs will be removed after 30 days of being added.
