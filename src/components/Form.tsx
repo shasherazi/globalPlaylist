@@ -8,9 +8,20 @@ function Form() {
 
   const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
+    // const testUrl = "http://127.0.0.1:5001/global-playlist-shasherazi/us-central1/add_track";
+    const url = "https://add-track-53dyj6olra-uc.a.run.app/";
     console.log(input);
-    fetch(`https://add-track-53dyj6olra-uc.a.run.app/?track=${input}`);
-    toast.success("Song added to playlist!");
+    fetch(`${url}?track=${input}`)
+      .then((res) => res.text())
+      .then((data) => {
+        if (data === "Invalid track") {
+          toast.error("Invalid track");
+        } else if (data === "Track already in playlist") {
+          toast.info("Track already in playlist");
+        } else {
+          toast.success("Track added to playlist");
+        }
+      });
   };
 
   return (
