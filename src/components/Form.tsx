@@ -9,7 +9,7 @@ function Form() {
   const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
     // const testUrl = "http://127.0.0.1:5001/global-playlist-shasherazi/us-central1/add_track";
-    
+
     if (input === "") {
       toast.error("Please enter a valid url");
       return;
@@ -30,6 +30,12 @@ function Form() {
       });
   };
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === "Enter") {
+      handleSubmit(e as any);
+    }
+  };
+
   return (
     <div className={styles.form}>
       <label className={styles.formHeading} htmlFor="url">
@@ -42,6 +48,7 @@ function Form() {
         placeholder="https://open.spotify.com/track/4cOdK2wGLETKBW3PvgPWqT"
         value={input}
         onChange={(e) => setInput(e.target.value)}
+        onKeyDown={(e) => handleKeyDown(e)}
       />
       <button
         className={styles.formButton}
