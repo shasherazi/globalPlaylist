@@ -7,13 +7,28 @@ function App() {
     <>
       <div className="header">
         <h1 className="title">Global Spotify playlist</h1>
-        <a href="https://www.buymeacoffee.com/syedhassanaskri" target="_blank">
-          <img
-            src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
-            className="coffee"
-            alt="Buy Me A Coffee"
-          />
-        </a>
+        <div className="social-badges">
+          <a
+            href="https://www.buymeacoffee.com/syedhassanaskri"
+            target="_blank"
+          >
+            <img
+              src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png"
+              className="coffee"
+              alt="Buy Me A Coffee"
+            />
+          </a>
+          <a
+            href="https://github.com/shasherazi/globalPlaylist"
+            target="_blank"
+          >
+            <img
+              src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white"
+              className="github"
+              alt="Github logo"
+            />
+          </a>
+        </div>
       </div>
       <p className="description">
         Add your favorite song to the playlist and listen to it with the rest of

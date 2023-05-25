@@ -30,6 +30,27 @@
 }
 
 .form > button {
-  height: 40px;
+  height: 42px;
+  padding: 0 5px;
   width: 150px;
+  background-color: #2f2f2f;
+  color: white;
+  border: 1px solid #2f2f2f;
+  box-sizing: border-box;
+}
+
+.form > button:hover {
+  border-color: #1ed760;
+}
+
+@media (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+
+  .formHeading {
+    align-self: flex-start;
+    margin-left: -10px;
+  }
 }

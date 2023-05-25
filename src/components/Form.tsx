@@ -27,7 +27,7 @@ function Form() {
   return (
     <div className={styles.form}>
       <label className={styles.formHeading} htmlFor="url">
-        Enter the song url:
+        Enter the song url
       </label>
       <input
         id="url"
