@@ -9,6 +9,12 @@ function Form() {
   const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
     e.preventDefault();
     // const testUrl = "http://127.0.0.1:5001/global-playlist-shasherazi/us-central1/add_track";
+    
+    if (input === "") {
+      toast.error("Please enter a valid url");
+      return;
+    }
+
     const url = "https://add-track-53dyj6olra-uc.a.run.app/";
     console.log(input);
     fetch(`${url}?track=${input}`)
