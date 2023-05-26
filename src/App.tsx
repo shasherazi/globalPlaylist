@@ -34,7 +34,7 @@ function App() {
       </div>
       <p className="description">
         Add your favorite song to the playlist and listen to it with the rest of
-        the world! Songs will be removed after 30 days of being added.
+        the world!
       </p>
       <br />
       <Form ref={iframe} />
