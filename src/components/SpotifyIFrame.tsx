@@ -1,7 +1,10 @@
 import { forwardRef } from "react";
 import styles from "../stlyes/SpotifyIFrame.module.css";
 
-const SpotifyIFrame = forwardRef(function SpotifyIFrame(_props, ref: any) {
+const SpotifyIFrame = forwardRef<HTMLIFrameElement>(function SpotifyIFrame(
+  _props,
+  ref
+) {
   return (
     <iframe
       className={styles.spotifyIFrame}
