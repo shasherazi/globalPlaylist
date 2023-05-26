@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { forwardRef, useState } from "react";
 import styles from "../stlyes/Form.module.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 
-function Form() {
+const Form = forwardRef(function Form(_props, ref: any) {
   const [input, setInput] = useState<string>("");
 
   const handleSubmit = (e: React.FormEvent<HTMLButtonElement>) => {
@@ -16,7 +16,7 @@ function Form() {
     }
 
     const url = "https://add-track-53dyj6olra-uc.a.run.app/";
-    console.log(input);
+
     fetch(`${url}?track=${input}`)
       .then((res) => res.text())
       .then((data) => {
@@ -26,6 +26,7 @@ function Form() {
           toast.info("Track already in playlist");
         } else {
           toast.success("Track added to playlist");
+          ref.current.src += "";
         }
       });
   };
@@ -64,6 +65,6 @@ function Form() {
       />
     </div>
   );
-}
+});
 
 export default Form;

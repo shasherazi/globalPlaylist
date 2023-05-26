@@ -1,6 +1,7 @@
+import { forwardRef } from "react";
 import styles from "../stlyes/SpotifyIFrame.module.css";
 
-function SpotifyIFrame() {
+const SpotifyIFrame = forwardRef(function SpotifyIFrame(_props, ref: any) {
   return (
     <iframe
       className={styles.spotifyIFrame}
@@ -10,8 +11,9 @@ function SpotifyIFrame() {
       allowFullScreen={true}
       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       loading="lazy"
+      ref={ref}
     ></iframe>
   );
-}
+});
 
 export default SpotifyIFrame;

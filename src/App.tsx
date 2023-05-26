@@ -1,8 +1,10 @@
+import { useRef } from "react";
 import Form from "./components/Form";
 import SpotifyIFrame from "./components/SpotifyIFrame";
 import "./stlyes/App.css";
 
 function App() {
+  const iframe = useRef<HTMLIFrameElement>(null);
   return (
     <>
       <div className="header">
@@ -35,8 +37,8 @@ function App() {
         the world! Songs will be removed after 30 days of being added.
       </p>
       <br />
-      <Form />
-      <SpotifyIFrame />
+      <Form ref={iframe} />
+      <SpotifyIFrame ref={iframe} />
       <p className="footer">
         Or see the playlist on Spotify{" "}
         <a
