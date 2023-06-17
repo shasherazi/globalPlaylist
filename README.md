@@ -1,4 +1,7 @@
 # global playlist
+![Screen Shot 2023-06-17 at 16 44 03](https://github.com/shasherazi/globalPlaylist/assets/63230301/b95110d2-5403-435f-869a-410badcb7c81)
+
+
 
 i know that spotify has top 50 global playlist but tbh that playlist is just ass.
 so i made this website where anyone can add any song to a playlist and people can
